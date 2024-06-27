@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    background-color: #ccc;
+    height: 400px;
+
+    .list {
+        @include grid(4, 30px);
+    
+        @include screen(tablet);
+    
+        @include screen(mobile);
+    }
+
+    .item {
+        background-color: olivedrab;
+        padding: 30px 0;
+    }
+
+    // .item {
+    //     position: absolute;
+    //     @include position(0, 0, auto, auto);
+    //     width: 100px;
+    //     height: 100px;
+    //     background-color: aqua;
+    //     border: none;
+    //     outline: none;
+    // }
+
+    // .item {
+    //     @include position(center);
+    //     top-left, top-right, bottom-right, bottom-left, center
+    //     position: absolute;
+    //     width: 100px;
+    //     height: 100px;
+    //     background: olivedrab;
+    // }
+}
